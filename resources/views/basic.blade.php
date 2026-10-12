@@ -1,19 +1,12 @@
-@php
-    $num = 68;
 
-    $names = ['Arif','Bilal','Zahid','Kamran','Haris']
-
-
-
-@endphp
 
 
 <h1>Basic of Laravel</h1>
 
 
-@foreach ($names as $n)
+@foreach ($names as $i=>$n )
 
-<p>{{ $n }}</p>
+<p>{{ $i+1 }} {{ $n }}</p>
     
 @endforeach
 
