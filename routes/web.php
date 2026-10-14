@@ -16,6 +16,11 @@ Route::get('/', function () {
 Route::get('about', function(){
     return view('about');
 });
+
+Route::get('addProduct', function(){
+    return view('addProduct');
+});
+
 Route::get('basic', [BasicController::class,'index']);
 
 Route::get('user', [UserController::class, 'index']);
